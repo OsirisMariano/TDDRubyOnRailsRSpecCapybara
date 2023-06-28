@@ -1,0 +1,71 @@
+  [1m[35m (7.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-06-27 09:24:44.885061"], ["updated_at", "2023-06-27 09:24:44.885061"]]
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-06-28 11:38:10 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcomes/index.html.erb within layouts/application
+  Rendered welcomes/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 331)
+  Rendered layout layouts/application.html.erb (Duration: 306.0ms | Allocations: 94994)
+Completed 200 OK in 335ms (Views: 311.8ms | ActiveRecord: 0.0ms | Allocations: 99207)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateProducts (20230628150913)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "products" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "product" varchar, "name" varchar, "price" decimal, "quantidade" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230628150913"]]
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-06-28 12:15:22 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcomes/index.html.erb within layouts/application
+  Rendered welcomes/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 331)
+  Rendered layout layouts/application.html.erb (Duration: 58.2ms | Allocations: 36188)
+Completed 200 OK in 67ms (Views: 60.3ms | ActiveRecord: 0.0ms | Allocations: 40323)
+
+
+Started GET "/products" for 127.0.0.1 at 2023-06-28 12:15:29 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/products"):
+  
+Started GET "/rails/info/routes?path=pro" for 127.0.0.1 at 2023-06-28 12:15:32 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"pro"}
+Completed 200 OK in 6ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 1911)
+
+
+Started GET "/rails/info/routes?path=produt" for 127.0.0.1 at 2023-06-28 12:15:33 -0300
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"produt"}
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 647)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-28 17:42:43 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcomes/index.html.erb within layouts/application
+  Rendered welcomes/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 331)
+  Rendered layout layouts/application.html.erb (Duration: 69.3ms | Allocations: 35791)
+Completed 200 OK in 82ms (Views: 72.0ms | ActiveRecord: 0.0ms | Allocations: 39926)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-28 18:16:28 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering welcomes/index.html.erb within layouts/application
+  Rendered welcomes/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 331)
+  Rendered layout layouts/application.html.erb (Duration: 53.1ms | Allocations: 35282)
+Completed 200 OK in 60ms (Views: 55.0ms | ActiveRecord: 0.0ms | Allocations: 39496)
+
+

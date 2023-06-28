@@ -1,32 +1,24 @@
-O curso visa mostrar aos alunos como utilizar a técnicas de desenvolvimento de software guiado 
-a testes (TDD) utilizando o Ruby on Rails em conjunto com as ferramentas RSpec e Capybara. 
+# README
 
-O curso estará dividido em 7 módulos que facilitarão a o aprendizado do aluno, sendo o módulo 1 o básico 
-que apresentará os conceitos de tudo que estudaremos no curso. 
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-O módulo 2 será específico do Rspec onde nos aprofundaremos nessa ferramenta. 
+Things you may want to cover:
 
-No módulo 3 conheceremos o FactoryGirl e o VCR que serão ferramentas importantíssimas para 
-o dia a dia do desenvolvimento com TDD. No módulo 4 aprenderemos como testar Models e Controllers do 
-Rails. No módulo 5 conheceremos o Capybara e veremos como fazer testes de Views usando essa ferramenta. 
+* Ruby version
 
-No módulo 6 veremos como testar APIs, e por fim, no módulo 7, colocaremos em prática tudo que vimos e 
-desenvolveremos uma pequena aplicação utilizando os conceitos aprendidos durante os módulos anteriores.
-    
-## O que você aprenderá
- - Usar TDD
- - Usar BDD
- - Usar o Rspec
- - Entender Mocks e Stubs
- - Usar o Capybara
- - Usar o FactoryGirl
- - Usar o VCR
+* System dependencies
 
-## Há algum requisito ou pré-requisito para o curso?
+* Configuration
 
- - Ruby on Rails Básico
+* Database creation
 
-## Para quem é este curso:
- - Desenvolvedores
- - Programadores
- - Desenvolvedores Ruby on Rails
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
